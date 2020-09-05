@@ -1,0 +1,8 @@
+.card-header {
+    text-align: center;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #c0c0c0;
+}
+.rounded-img {
+    border-radius: 50%;
+}
