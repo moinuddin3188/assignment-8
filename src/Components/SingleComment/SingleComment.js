@@ -14,9 +14,9 @@ const SingleComment = (props) => {
         gender = "men";
     };
     const img = `https://randomuser.me/api/portraits/${gender}/${imgId}.jpg`;
-console.log(imgId);
+
     return (
-        <Card className="comment">
+        <Card className="comment" style={{display: "flex", marginBottom: "20px", boxShadow: "3px 3px 10px lightgray"}}>
             <CardContent>
                 <img className="rounded-img" style={{width: '70px'}} src={img} alt=""/>
             </CardContent>

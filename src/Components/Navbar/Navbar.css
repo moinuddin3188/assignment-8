@@ -3,4 +3,11 @@
     padding: 20px; 
     margin-bottom: 20px;
     border-radius: 5px;
+    display: flex;
+}
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
 }

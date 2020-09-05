@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/">
             <Posts/>
           </Route>
-          <Route exact path="/home">
+          <Route path="/home">
             <Posts/>
           </Route>
           <Route path="/comment/:postId">

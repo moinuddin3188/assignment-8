@@ -5,17 +5,11 @@ import Link from '@material-ui/core/Link';
 
 const Navbar = () => {
     return (
-        <Breadcrumbs className="navbar">
-            <Link color="inherit" href="home" >
-                Home
-            </Link>
-            <Link color="inherit" href="#" >
-                Blog
-            </Link>
-            <Link color="inherit" href="#" >
-                Notification
-            </Link>
-        </Breadcrumbs>
+        <div className="navbar">
+            <a href="/home">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Notification</a>
+        </div>
     );
 };
 

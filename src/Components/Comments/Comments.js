@@ -29,8 +29,9 @@ const Comments = () => {
             {
                 <SinglePost post={post} showSeeMore={false} />
             }
+            <h5>Comments</h5>
             {
-                comments.map(comment => <SingleComment comment={comment} />)
+                comments.map(comment => <SingleComment key={comment.id} comment={comment} />)
             }
         </div>
     );

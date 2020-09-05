@@ -11,12 +11,12 @@ const Posts = () => {
         .then(data => setPosts(data));
     }, []);
 
-    const first10 = posts.slice(0, 10);
+    const first50 = posts.slice(0, 50);
     
     return (
         <div>
             {
-                first10.map(post => <SinglePost post={post} key={post.id} showSeeMore={true} />)
+                first50.map(post => <SinglePost post={post} key={post.id} showSeeMore={true} />)
             }
         </div>
     );
