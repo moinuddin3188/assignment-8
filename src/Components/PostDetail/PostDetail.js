@@ -4,7 +4,7 @@ import SingleComment from '../SingleComment/SingleComment';
 import SinglePost from '../SinglePost/SinglePost';
 
 
-const Comments = () => {
+const PostDetail = () => {
 
     const { postId } = useParams();
 
@@ -37,4 +37,4 @@ const Comments = () => {
     );
 };
 
-export default Comments;
+export default PostDetail;

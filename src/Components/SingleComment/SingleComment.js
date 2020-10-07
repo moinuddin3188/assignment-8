@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 const SingleComment = (props) => {
 
-    const {body} = props.comment;
+    const {body, name} = props.comment;
 
     const imgId = Math.floor(Math.random() * 99);
     let gender = "women";
@@ -21,6 +21,9 @@ const SingleComment = (props) => {
                 <img className="rounded-img" style={{width: '70px'}} src={img} alt=""/>
             </CardContent>
             <CardContent>
+                <Typography>
+                    <h5>{name} </h5>
+                </Typography>
                 <Typography variant="body2" component="p">
                     {body}
                 </Typography>

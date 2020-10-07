@@ -29,7 +29,11 @@ const SinglePost = (props) => {
 
     const {title, body, id} = props.post;
 
-    const userImg = `https://randomuser.me/api/portraits/women/${id}.jpg`;
+    let gender = "women";
+    if (id % 2 == 0) {
+        gender = "men";
+    };
+    const userImg = `https://randomuser.me/api/portraits/${gender}/${id}.jpg`;
 
     return (
         <Card className={classes.root}>
@@ -46,9 +50,12 @@ const SinglePost = (props) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                {props.showSeeMore && <Link to={`/comment/${id}`}>
-                    <Button variant="contained" color="primary">SEE MORE</Button>
-                </Link>}
+                {
+                    props.showSeeMore &&   
+                        <Link to={`/post/${id}`}>
+                            <Button variant="contained" color="primary">SEE MORE</Button>
+                        </Link>
+                }
             </CardActions>
         </Card>
     );

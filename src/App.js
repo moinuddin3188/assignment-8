@@ -2,7 +2,7 @@ import React from 'react';
 import Posts from './Components/Posts/Posts';
 import { Container } from '@material-ui/core';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Comments from './Components/Comments/Comments';
+import PostDetail from './Components/PostDetail/PostDetail';
 import NoMatch from './Components/NoMatch/NoMatch';
 import Navbar from './Components/Navbar/Navbar';
 
@@ -19,8 +19,8 @@ function App() {
           <Route path="/home">
             <Posts/>
           </Route>
-          <Route path="/comment/:postId">
-            <Comments/>
+          <Route path="/post/:postId">
+            <PostDetail/>
           </Route>
           <Route path="*">
             <NoMatch/>
